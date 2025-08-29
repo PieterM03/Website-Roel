@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Website</title>
+    <link rel="stylesheet" href="Styles/Header.css">
+    <link rel="stylesheet" href="Styles/home.css">
+</head>
+<body>
+    <!-- Top bar -->
+    <div class="top-bar">
+      Email: info@example.com | Mobiel: +123-456-7890
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="Images/Logo.png" alt="Company Logo" class="logo">
+        <nav class="primary-navigation">
+            <ul class="nav-links">
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="Gallerij.html">GALLERIJ</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <!-- Burger menu -->
+        <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Overlay menu -->
+        <div class="overlay-menu">
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="Gallerij.html">GALLERIJ</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <script src="Java/OverlayMenu.js"></script>
+
+    <!-- Header Image -->
+    <div class="header-image">
+        <img src="Images/Omslagfoto.svg" alt="Header Image">
+        <div class="products-block">
+            <div class="product">
+                <h2>Koord</h2>
+                <p>Gedraaid of gevlochten koord. Leverbaar in katoen, acetaat of polypropyleen. Veel gebruikt als handvat voor luxe draagtassen, verpakkingen en geschenkverpakkingen.</p>
+                <img src="Images/Product - Koord.png" alt="Product">
+                <button onclick="location.href='Product - Koord.html'">Meer Informatie</button>
+            </div>
+            <div class="product">
+                <h2>Band</h2>
+                <p>Satijnlint, ribslint, keperband, draagband of geweven lint in polyester, katoen of viscose. Verkrijgbaar in diverse breedtes en kleuren. Geschikt voor afwerking, mode en technische toepassingen.</p>
+                <img src="Images/Product - Band.png" alt="Product">
+                <button onclick="location.href='Product - Band.html'">Meer Informatie</button>
+            </div>
+            <div class="product">
+                <h2>Elastiek</h2>
+                <p>Rond of plat elastiek met of zonder kern. Geschikt voor toepassingen in verpakkingen, agenda’s, textiel en technische producten. Leverbaar per meter of voorzien van nippels.</p>
+                <img src="Images/Product - Elastiek.png" alt="Product">
+                <button onclick="location.href='Product - Elastiek.html'">Meer Informatie</button>
+            </div>
+            <div class="product">
+                <h2>Bandelastiek</h2>
+                <p>Geweven elastische band. Vaak gebruikt als sluiting of bevestiging voor kleding, mappen, displays en verpakkingen. Verkrijgbaar in diverse breedtes, kleuren en rekverhoudingen.</p>
+                <img src="Images/Product - Bandelastiek.png" alt="Product">
+                <button onclick="location.href='Product - Bandelastiek.html'">Meer Informatie</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-us elegant-section">
+        <div class="container">
+        <h2>Over Ons</h2>
+        <p>
+            ElastiCo is een dynamisch en flexibel bedrijf gespecialiseerd in het produceren van koorden, elastieken en linten  met én zonder nippels. Dankzij onze automatische productielijnen kunnen we snel schakelen en leveren, zonder in te boeten op kwaliteit.
+        </p>
+        </div>
+    </section>
+  
+    <!-- Parallax Section -->
+    <section class="parallax-section" style="background-image: url('Images/Omslagfoto.svg');">
+    </section>
+    
+    <!-- Contact/Footer Section -->
+    <section class="custom-footer">
+        <div class="footer-grid">
+        <div class="footer-logo-col">
+            <img src="Images/Logo.png" alt="Company Logo" class="footer-logo">
+            <p>
+            Specialist in elastiek, koord en lint op maat. Snelle levering, hoge kwaliteit  met of zonder nippels.
+            </p>
+        </div>
+        <div class="footer-column">
+            <h3>NAVIGEER</h3>
+            <ul>
+            <li><a href="Index.html">HOME</a></li>
+            <li><a href="Gallerij.html">GALLERIJ</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>INFORMATIE</h3>
+            <ul>
+            <li><a href="#">INFO</a></li>
+            <li><a href="#">INFO</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>CONTACT</h3>
+            <ul class="contact-info">
+            <li><span class="icon">📍</span>Willem de Zwijgerstraat 42<br>6021 HN Budel - Nederland</li>
+            <li><span class="icon">📞</span> (+31) 6-12156468</li>
+            <li><span class="icon">✉️</span> elastico@upcmail.nl</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 ElastiCo - alle rechten voorbehouden.
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="Java/Header.js"></script>
+</body>
+</html>
