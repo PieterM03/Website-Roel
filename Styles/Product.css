@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+}
+
+.product-detail-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.product-image {
+  flex: 1 1 400px;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  flex: 1 1 400px;
+}
+
+.product-info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-specs {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.product-specs li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #222;
+}
+
+/* ---------- Tablets en kleinere laptops ---------- */
+@media (max-width: 1200px) {
+  .product-detail-container {
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+
+  .product-detail {
+    gap: 30px;
+  }
+
+  .product-info h1 {
+    font-size: 28px;
+  }
+
+  .product-description {
+    font-size: 15px;
+  }
+}
+
+/* ---------- Tablets (staand) ---------- */
+@media (max-width: 992px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image,
+  .product-info {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .product-image img {
+    max-width: 100%;
+  }
+
+  .product-info h1 {
+    font-size: 26px;
+  }
+
+  .product-specs {
+    text-align: left; /* specs toch links uitgelijnd voor leesbaarheid */
+    display: inline-block;
+  }
+}
+
+/* ---------- Grote telefoons ---------- */
+@media (max-width: 768px) {
+  .product-detail-container {
+    margin: 30px auto;
+    padding: 0 10px;
+  }
+
+  .product-info h1 {
+    font-size: 22px;
+  }
+
+  .product-description {
+    font-size: 14px;
+  }
+
+  .product-specs li {
+    font-size: 14px;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- Kleine telefoons ---------- */
+@media (max-width: 480px) {
+  .product-detail-container {
+    margin: 20px auto;
+    padding: 0 8px;
+  }
+
+  .product-info h1 {
+    font-size: 20px;
+  }
+
+  .product-description {
+    font-size: 13px;
+  }
+
+  .product-specs li {
+    font-size: 13px;
+  }
+
+  .back-button {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+}

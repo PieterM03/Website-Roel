@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="Styles/Header.css">
+  <link rel="stylesheet" href="Styles/home.css">
+  <link rel="stylesheet" href="Styles/Contact.css">
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="top-bar">
+    Email: elastico@upcmail.nl | Mobiel: (+31) 6-12156468
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+      <img src="Images/Logo.png" alt="Company Logo" class="logo">
+      <nav class="primary-navigation">
+          <ul class="nav-links">
+              <li><a href="Index.html">HOME</a></li>
+              <li><a href="Gallerij.html">GALLERIJ</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+      </nav>
+
+      <!-- Burger menu -->
+      <label class="burger" for="burger">
+          <input type="checkbox" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
+
+      <!-- Overlay menu -->
+      <div class="overlay-menu">
+          <ul>
+              <li><a href="Index.html">HOME</a></li>
+              <li><a href="Gallerij.html">GALLERIJ</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+      </div>
+  </header>
+  <script src="Java/OverlayMenu.js"></script>
+
+  <!-- Main Content -->
+  <main>
+    <div class="contact-container">
+      <!-- Left Side: Contact Form -->
+      <div class="contact-form">
+        <h2>Neem Contact Op</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" placeholder="Uw Naam" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Uw Email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Onderwerp</label>
+            <input type="text" id="subject" name="subject" placeholder="Onderwerp" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" rows="5" placeholder="Uw bericht" required></textarea>
+          </div>
+          <button type="submit" class="btn">Verstuur Bericht</button>
+        </form>
+      </div>
+
+      <!-- Right Side: Contact Details -->
+      <div class="contact-details">
+        <h2>Contact Informatie</h2>
+        
+        <!-- Address -->
+        <div class="detail-item">
+          <strong>Adres</strong>
+          <p>Willem de Zwijgerstraat 42 <br> 6021 HN, Budel <br> Nederland</p>
+        </div>
+        
+        <!-- Phone -->
+        <div class="detail-item">
+          <strong>Telefoonnummer</strong>
+          <p>(+31) 6-12156468</p>
+        </div>
+        
+        <!-- Email -->
+        <div class="detail-item">
+          <strong>Email</strong>
+          <p>elastico@upcmail.nl</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="map-container">
+      <iframe
+        width="100%"
+        height="400"
+        frameborder="0"
+        style="border:0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2620.365300265483!2d5.571943524236146!3d51.268325916970284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c72bbce41a72c1%3A0x661f2e2184d73ce!2sWillem%20de%20Zwijgerstraat%2042%2C%206021%20HN%20Budel!5e0!3m2!1snl!2snl!4v1755598990967!5m2!1snl!2snl"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 ElastiCo - alle rechten voorbehouden.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="Java/Header.js"></script>
+
+</body>
+</html>

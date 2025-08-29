@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elastieken met nippels</title>
+  <link rel="stylesheet" href="Styles/Header.css">
+  <link rel="stylesheet" href="Styles/Product.css">
+  <link rel="stylesheet" href="Styles/home.css">
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="top-bar">
+    Email: elastico@upcmail.nl | Mobiel: (+31) 6-12156468
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+      <img src="Images/Logo.png" alt="Company Logo" class="logo">
+      <nav class="primary-navigation">
+          <ul class="nav-links">
+              <li><a href="Index.html">HOME</a></li>
+              <li><a href="Gallerij.html">GALLERIJ</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+      </nav>
+
+      <!-- Burger menu -->
+      <label class="burger" for="burger">
+          <input type="checkbox" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </label>
+
+      <!-- Overlay menu -->
+      <div class="overlay-menu">
+          <ul>
+              <li><a href="Index.html">HOME</a></li>
+              <li><a href="Gallerij.html">GALLERIJ</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+          </ul>
+      </div>
+  </header>
+  <script src="Java/OverlayMenu.js"></script>
+
+  <!-- Product Detail -->
+  <main class="product-detail-container">
+    <div class="product-detail">
+      <div class="product-image">
+        <img src="Images/Product - Elastiek.png" alt="Koord">
+      </div>
+      <div class="product-info">
+        <h1>Elastiek</h1>
+        <p class="product-description">
+          Rond elastiek op spoel, geschikt voor talloze toepassingen zoals labels, agenda’s,  geschenkverpakkingen, maskers en speelgoed. Gemaakt van 50% polyester en 50% rubber.
+        </p>
+        <ul class="product-specs">
+          <li>✔️ Rond elastiek ø1.5mm</li>
+          <li>✔️ Materiaal: 50% polyester / 50% rubber</li>
+          <li>✔️ Geleverd op spoel van 500 meter</li>
+          <li>✔️ Toepasbaar voor o.a. agenda’s, labels, maskers en decoratie</li>
+          <li>✔️ Verkrijgbaar in ruim 45 kleuren, waaronder fluor en lurexvarianten</li>
+        </ul>
+        <button class="back-button" onclick="location.href='Index.html'">← Terug naar overzicht</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 ElastiCo - alle rechten voorbehouden.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="Java/Header.js"></script>
+</body>
+</html>
