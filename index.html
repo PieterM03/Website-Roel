@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="Styles/Header.css">
     <link rel="stylesheet" href="Styles/home.css">
 </head>
+
+<script>
+(function adjustAboutPadding(){
+  function update() {
+    var header = document.querySelector('.header-image');
+    var products = document.querySelector('.products-block');
+    var about = document.querySelector('.about-us.elegant-section');
+    if (!products || !about) return;
+    // basisruimte (houdt bestaande look)
+    var base = 40;
+    // bepaal of products-block doorloopt onder header en hoeveel ruimte nodig is
+    var headerRect = header ? header.getBoundingClientRect() : { bottom: 0 };
+    var productsRect = products.getBoundingClientRect();
+    // producten kunnen hoger worden wanneer kolommen veranderen; bereken overlappende hoogte
+    var overlap = Math.max(0, productsRect.bottom - headerRect.bottom);
+    // kleine extra marge zodat tekst niet klem komt te zitten
+    var extra = 12;
+    about.style.paddingTop = (base + overlap + extra) + 'px';
+  }
+  // run on load + resize + (snel) on orientation change
+  window.addEventListener('load', update);
+  window.addEventListener('resize', update);
+  window.addEventListener('orientationchange', function(){ setTimeout(update, 120); });
+  // run once in case elements al klaar zijn
+  setTimeout(update, 50);
+})();
+</script>
 <body>
     <!-- Top bar -->
     <div class="top-bar">
