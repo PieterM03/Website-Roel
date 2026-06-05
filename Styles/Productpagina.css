@@ -1,0 +1,373 @@
+﻿/* Basis reset (zoals op home via home.css) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Algemene basis */
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background-color: #f3f4f2;
+    color: #2e2e2e;
+    line-height: 1.65;
+    padding-top: 130px;
+}
+
+/* PRODUCT PAGE */
+.product-page {
+    padding: 60px 20px;
+    background: #ffffff;
+    border-top: 1px solid #e2e7ec;
+    border-bottom: 1px solid #e2e7ec;
+}
+
+.product-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* FOTO */
+.product-image {
+    flex: 0 0 40%;
+    max-width: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-height: 620px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #dce3e8;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+/* TEKST */
+.product-info {
+    flex: 1;
+}
+
+.product-info h1 {
+    font-size: 52px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    color: #1f2933;
+}
+
+.technical-info {
+    margin-bottom: 30px;
+}
+
+.technical-info p {
+    margin-bottom: -16px;
+    font-size: 16px;
+    color: #3f4a54;
+}
+
+.product-description h2 {
+    font-size: 24px;
+    margin-bottom: -6px;
+    color: #1f2933;
+}
+
+.product-description h3 {
+    margin-top: 20px;
+    margin-bottom: -14px;
+    font-size: 18px;
+    color: #2a3742;
+}
+
+.product-description p {
+    margin-bottom: 15px;
+    color: #4d5964;
+    max-width: 64ch;
+}
+
+.product-description ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.product-description li {
+    margin-bottom: -5px;
+}
+
+.highlight {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    margin: 14px 0 22px;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border: 1px solid #d9dee2;
+    border-radius: 4px;
+    background: #f8fafb;
+}
+
+.color-swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    border: 1px solid #9ea8b0;
+    background: var(--swatch, #cccccc);
+    flex-shrink: 0;
+}
+
+.color-label {
+    font-size: 14px;
+    color: #33404a;
+}
+
+/* CTA knop */
+.cta-button {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #2A4D69;
+    color: #2A4D69;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.cta-button-secondary {
+    border-color: #5a6772;
+    color: #3f4a54;
+}
+
+.cta-button:hover {
+    background-color: #2A4D69;
+    color: #ffffff;
+}
+
+.cta-button-secondary:hover {
+    background-color: #5a6772;
+    border-color: #5a6772;
+    color: #ffffff;
+}
+
+.custom-footer {
+    background-color: #fff;
+    color: #333;
+    padding: 42px 30px;
+    border-top: 1px solid #dce2e7;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-logo-col {
+    flex: 1 1 250px;
+}
+
+.footer-logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+    margin-left: -4.7px;
+}
+
+.footer-logo-col p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+}
+
+.footer-column h3 {
+    font-size: 15px;
+    color: #1d4668;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #4d5862;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #1d4668;
+}
+
+.contact-info .icon {
+    margin-right: 8px;
+    color: #0d4a92;
+}
+
+.contact-info li {
+    font-size: 15px;
+    color: #4d5862;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #1C3D2E;
+    color: #eee;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .product-container {
+        gap: 30px;
+    }
+
+    .product-image {
+        flex-basis: 42%;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .product-info h1 {
+        font-size: 40px;
+    }
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-image {
+        order: 2; /* afbeelding onder tekst */
+        max-width: 100%;
+        flex-basis: auto;
+    }
+
+    .product-info {
+        order: 1;
+    }
+
+    .product-info h1 {
+        font-size: 34px;
+    }
+
+    .product-page {
+        padding: 50px 20px;
+    }
+}
+
+/* Kleine telefoons */
+@media (max-width: 480px) {
+
+    body {
+        padding-top: 100px;
+    }
+
+    .product-info h1 {
+        font-size: 30px;
+    }
+
+    .technical-info p {
+        font-size: 14px;
+    }
+
+    .product-description p,
+    .product-description li {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .cta-actions {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .product-page {
+        padding: 38px 12px;
+    }
+
+    .product-info h1 {
+        font-size: 26px;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-button {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .product-container,
+    .footer-grid {
+        max-width: 1400px;
+    }
+}
+

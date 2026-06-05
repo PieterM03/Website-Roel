@@ -1,0 +1,316 @@
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f5f3;
+}
+
+.product-detail-container {
+  max-width: 1200px;
+  margin: 64px auto;
+  padding: 0 20px;
+}
+
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.product-image {
+  flex: 1 1 400px;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 1px solid #dde3e8;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-info {
+  flex: 1 1 400px;
+}
+
+.product-info h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
+  color: #1f2933;
+}
+
+.product-description {
+  font-size: 17px;
+  color: #3f4b55;
+  margin-bottom: 20px;
+  max-width: 68ch;
+}
+
+.product-specs {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.product-specs li {
+  margin-bottom: 9px;
+  font-size: 15px;
+  color: #3f4b55;
+}
+
+.back-button {
+  padding: 10px 18px;
+  background-color: transparent;
+  color: #2a4d69;
+  border: 2px solid #2a4d69;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #2a4d69;
+  color: #fff;
+}
+
+.band-products-section {
+  margin-top: 60px;
+}
+
+.gallery-title {
+  font-size: 28px;
+  color: #1f2933;
+  margin-bottom: 18px;
+  letter-spacing: 0.01em;
+}
+
+.band-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.band-product-card {
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--card-border, #e9edf2);
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.band-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.band-product-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+  padding: 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--card-divider, #eef1f4);
+  display: block;
+}
+
+.product-image-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f7f7f7 0%, #ececec 100%);
+  border-bottom: 1px solid #e1e1e1;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px;
+}
+
+.product-image-placeholder span {
+  max-width: 150px;
+  line-height: 1.4;
+}
+
+.band-product-card h3 {
+  font-size: 17px;
+  margin: 14px 16px 10px;
+  line-height: 1.3;
+  color: #202b34;
+}
+
+.product-link {
+  margin: auto 16px 16px;
+  text-decoration: none;
+  color: #2A4D69;
+  border: 2px solid #2A4D69;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.product-link:hover {
+  background-color: #2A4D69;
+  color: #fff;
+}
+
+.disabled-product-link,
+.disabled-product-link:hover {
+  background: #f4f4f4;
+  color: #767676;
+  border-color: #cfcfcf;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ---------- Tablets en kleinere laptops ---------- */
+@media (max-width: 1200px) {
+  .product-detail-container {
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+
+  .product-detail {
+    gap: 30px;
+  }
+
+  .product-info h1 {
+    font-size: 28px;
+  }
+
+  .product-description {
+    font-size: 15px;
+  }
+}
+
+/* ---------- Tablets (staand) ---------- */
+@media (max-width: 992px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image,
+  .product-info {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .product-image img {
+    max-width: 100%;
+  }
+
+  .product-info h1 {
+    font-size: 26px;
+  }
+
+  .product-specs {
+    text-align: left; /* specs toch links uitgelijnd voor leesbaarheid */
+    display: inline-block;
+  }
+}
+
+/* ---------- Grote telefoons ---------- */
+@media (max-width: 768px) {
+  .product-detail-container {
+    margin: 30px auto;
+    padding: 0 10px;
+  }
+
+  .product-info h1 {
+    font-size: 26px;
+  }
+
+  .product-description {
+    font-size: 14px;
+  }
+
+  .product-specs li {
+    font-size: 14px;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+
+  .band-products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .band-product-card h3 {
+    font-size: 16px;
+  }
+
+  .gallery-title {
+    font-size: 24px;
+  }
+}
+
+/* ---------- Kleine telefoons ---------- */
+@media (max-width: 480px) {
+  .product-detail-container {
+    margin: 20px auto;
+    padding: 0 8px;
+  }
+
+  .product-info h1 {
+    font-size: 20px;
+  }
+
+  .product-description {
+    font-size: 13px;
+  }
+
+  .product-specs li {
+    font-size: 13px;
+  }
+
+  .back-button {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+
+  .band-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-detail-container {
+    padding: 0 6px;
+  }
+
+  .product-info h1 {
+    font-size: 22px;
+  }
+
+  .gallery-title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .product-detail-container {
+    max-width: 1400px;
+  }
+
+  .band-products-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
