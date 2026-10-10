@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  line-height: 1.65;
+  background: linear-gradient(180deg, #f5f5f3 0%, #f1f2f0 100%);
+  color: #2b333a;
+  padding-top: 130px;
+}
+
+.footer {
+  background-color: #1c3d2e;
+  color: #eef2f5;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.products-block {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background-color: rgba(255, 255, 255, 0.96);
+  width: 85%;
+  border: 1px solid #dce2e7;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+.product {
+  flex: 1 1 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #e6ebef;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product h2 {
+  font-size: 19px;
+  margin-bottom: -6px;
+  color: #1f2933;
+  letter-spacing: 0.01em;
+  min-height: 48px;
+}
+
+.product h2.specialism-title {
+  font-size: 17px;
+  line-height: 1.18;
+  min-height: 56px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #5d6872;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  min-height: 40px;
+}
+
+/* 🔧 Zorg dat de afbeelding altijd op gelijke hoogte start */
+.product img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  margin: 15px 0;
+  border-radius: 6px;
+  margin-top: auto; /* <-- nieuw toegevoegd */
+}
+
+.product button {
+  background: transparent;
+  color: #2A4D69;
+  border: 2px solid #2A4D69;
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-top: 15px;
+}
+.product button:hover {
+  background-color: #2A4D69;
+  color: #fff;
+}
+
+
+/* About Us Section */
+.about-us.elegant-section {
+  background: #fff;
+  margin-top: 0px;
+  padding: 52px 20px;
+  padding-top: 180px;
+  text-align: center;
+  border-top: 1px solid #e2e7ec;
+  border-bottom: 1px solid #e2e7ec;
+}
+
+.about-us .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1f2933;
+  letter-spacing: 0.02em;
+}
+
+.about-us p {
+  font-size: 17px;
+  color: #48525c;
+  line-height: 1.85;
+}
+
+/* Parallax Section */
+.parallax-section {
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact/Footer Section */
+.custom-footer {
+  background-color: #fff;
+  color: #333;
+  padding: 42px 30px;
+  border-top: 1px solid #dce2e7;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-logo-col {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  max-width: 180px;
+  margin-bottom: 20px;
+  margin-left: -4.7px
+}
+
+.footer-logo-col p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-column h3 {
+  font-size: 15px;
+  color: #1d4668;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #4d5862;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #1d4668;
+}
+
+.contact-info .icon {
+  margin-right: 8px;
+  color: #0d4a92;
+}
+
+.contact-info li {
+  font-size: 15px;
+  color: #4d5862;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 992px) {
+  .footer-grid {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .parallax-section {
+    background-attachment: scroll;
+  }
+}
+
+
+/* ---------- Tablets en kleinere laptops ---------- */
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+  .products-block {
+    width: 95%;
+    padding: 10px;
+  }
+  .product h2 {
+    font-size: 17px;
+  }
+
+  .product h2.specialism-title {
+    font-size: 16px;
+    min-height: 52px;
+  }
+  .product p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* ---------- Tablets (staand) ---------- */
+@media (max-width: 992px) {
+  .products-block {
+    position: relative;   /* zodat het niet meer bovenop de afbeelding valt */
+    transform: none;
+    top: auto;
+    left: auto;
+    margin-top: 20px;
+  }
+
+  .product {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .about-us.elegant-section {
+    padding-top: 84px;
+  }
+}
+
+/* ---------- Grote telefoons ---------- */
+@media (max-width: 768px) {
+
+  .products-block {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .product {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .product h2 {
+    font-size: 16px;
+  }
+
+  .product h2.specialism-title {
+    font-size: 15px;
+    min-height: 48px;
+  }
+
+  .product p {
+    font-size: 13px;
+  }
+
+  .about-us h2 {
+    font-size: 26px;
+  }
+
+  .about-us p {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Kleine telefoons ---------- */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding-top: 105px;
+  }
+
+  .top-bar {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .primary-navigation ul {
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .products-block {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .product {
+    margin: 8px 0;
+    padding: 12px;
+  }
+
+  .product img {
+    max-height: 120px;
+  }
+
+  .product button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .about-us h2 {
+    font-size: 22px;
+  }
+
+  .about-us p {
+    font-size: 15px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    padding-top: 98px;
+  }
+
+  .product {
+    padding: 10px;
+  }
+
+  .product h2 {
+    font-size: 15px;
+  }
+
+  .product h2.specialism-title {
+    font-size: 14px;
+    min-height: 44px;
+  }
+
+  .about-us p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .products-block {
+    width: min(78%, 1500px);
+  }
+
+  .about-us .container,
+  .footer-grid {
+    max-width: 1400px;
+  }
+}
+
+
+
